@@ -1,23 +1,54 @@
 <!DOCTYPE html>
 
 <html>
-
-<head>
-    <title>To Do List</title>
-
-    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  <head>
+    <title>Home</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script type="text/javascript" src="js/app.js"></script>
-</head>
-<body>
-    <div class="header">
-        <h1>To Do List</h1>
-        <hr />
+  </head>
+  <body>
+    <div class="jumbotron">
+      <h1 class="display-4">To Do List</h1>
+      <p class="lead">This is a simple and elegant to do list fit for your busy life.</p>
+      <hr class="my-4">
     </div>
+    <h1 class="todo-header">My List</h1>
 
-    <div class="modify-list">
-        <div>
-            <button id="add-item">Add Item</button>
-            <button id="remove-item">Remove Item</button>
+    <h1 class="list-title">Things to Do</h1>
+    <ul id="ul"></ul>
+     
+    <button class="btn btn-primary width-button" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Add to List</button>
+    <div class="collapse" id="collapseExample">
+      <div class="card card-body width-collapse">
+
+        <form>
+        <div class="form-group width">
+          <label for="exampleFormControlInput1">Item</label>
+          <input type="text" class="form-control" id="exampleFormControlInput1">
+        </div>
+        <div class="form-group width-textarea">
+          <label for="exampleFormControlTextarea1">Description</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <div class="form-check width">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+          <label class="form-check-label" for="defaultCheck1">High Priority</label>
+        </div>
+        <button type="button" class="btn btn-primary center" id="button">Add Item</button> <!--look here-->
+      </form>
+        
+      </div>
     </div>
-</body>
+     
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
+  </body>
+
+
+
+
+
 </html>
