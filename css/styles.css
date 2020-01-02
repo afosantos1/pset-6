@@ -1,67 +1,127 @@
 * {
+
   padding: 0;
+
   margin: 0;
+
 }
 
 body {
-	background-color: #F5EBF1;
+
+	background-color: #cccc99;
+
 }
+
 ul {
+
 	list-style-type: none;
-	
+
 }
+
 ul li {
+
 	font-size: 25px;
-	background-color: #F08080;
+
+	background-color: #cccc99;
+
 	width: 50%;
+
 	margin: auto;
-	color: white;
+
+	color: black;
+
 	padding: 10px;
+
 	border-radius: 5px;
+
 	margin-bottom: 20px;
+
 }
+
 span {
+
 	padding: 14px;
+
 	text-align: right;
+
 }
 
 li:nth-child(odd) {
-	background-color: #919DD8;
+
+	background-color: #cccc99;
+
 }
+
 li:nth-child(even) {
-	background-color: #F08080 ;
+
+	background-color: #cccc99 ;
+
 }
+
+
+
+
 
 
 
 .jumbotron {
+
 	font-family: 'Roboto Mono', monospace;
-	background: url("https://images.unsplash.com/photo-1542435503-956c469947f6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1867&q=80");
+
+	background: url("");
+
 	background-size: cover;
+
 	background-position: center;
+
 	text-align: center;
-	text-shadow: 2px 2px pink;
+
+	text-shadow: 1.5px 1.5px green;
+
 	opacity: 85%;
+
 }
+
 label {
+
 	font-family: 'Roboto Mono', monospace;
+
 }
+
+
 
 .todo-header {
 
+
+
 text-align: center;
-font-family: 'Roboto Mono', monospace;
+
+font-family: 'Monospaced', Courier New;
+
+
 
 }
+
 .completed {
+
 	text-decoration: line-through;
+
 	color: white;
+
 }
+
+
 
 .high-priority {
-	
+
+
+
 	width: 50px;
+
 	height: 50px;
+
 	color: red;
-	
+
+
+
 }
