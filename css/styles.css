@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 1;
+}
+
+.header {
+background: dodgerblue;
+color: navy;
+padding: 30px;
+}
+
+div.header {
+  text-align: center;
+  font-size: 30px;
+}
+
+#insert_button {
+  padding: 15px;
+  font-size: 20px;
+  color: black;
+}
+
+#textinput {
+  padding: 15px;
+  font-size: 20px;
+}
+
+#body {
+  background-color: white;
+}
+
+#add-button {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#list {
+  padding: 15px;
+  font-size: 30px;
+  text-align: center;
+}
+
+img.bttn_priority {
+  padding-left: 30px;
+  padding-right: 80px;
+  width: 60px;
+  height: 90px;
+}
+
+img.bttn_delete {
+  padding-left: 10px;
+  padding-right: 0px;
+}
+
+img.bttn_complete {
+  padding-left: 50px;
+  padding-right: 10px;
+}
+
+img {
+  width: 60px;
+  height: 80px;
+}
+
+#checkbox1 {
+  margin-top: 20px;
+}
+
+input.larger {
+  transform: scale(1);
+}
