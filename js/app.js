@@ -1,4 +1,4 @@
-let empty = []; 
+
 
 $("ul").on("click", "li", function(event){
 	$(this).toggleClass("completed");
