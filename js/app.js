@@ -1,4 +1,4 @@
-var array = [´completed´ ´priority´];
+var array = [´completed´, ´priority´];
 
 $("ul").on("click", "li", function(event){
 	$(this).toggleClass("completed");
