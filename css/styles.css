@@ -1,55 +1,60 @@
 * {
+
   padding: 0;
+
   margin: 0;
+
 }
 
 body {
-	background-color: #cccc99;
+
+background-color: #cccc99;
+
 }
 
 ul {
 
-	list-style-type: none;
+list-style-type: none;
 
 }
 
 ul li {
 
-	font-size: 25px;
+font-size: 25px;
 
-	background-color: #cccc99;
+background-color: #cccc99;
 
-	width: 50%;
+width: 50%;
 
-	margin: auto;
+margin: auto;
 
-	color: black;
+color: black;
 
-	padding: 10px;
+padding: 10px;
 
-	border-radius: 5px;
+border-radius: 5px;
 
-	margin-bottom: 20px;
+margin-bottom: 20px;
 
 }
 
 span {
 
-	padding: 14px;
+padding: 14px;
 
-	text-align: right;
+text-align: right;
 
 }
 
 li:nth-child(odd) {
 
-	background-color: #cccc99;
+background-color: #cccc99;
 
 }
 
 li:nth-child(even) {
 
-	background-color: #cccc99 ;
+background-color: #cccc99 ;
 
 }
 
@@ -61,25 +66,25 @@ li:nth-child(even) {
 
 .jumbotron {
 
-	font-family: 'Roboto Mono', monospace;
+font-family: 'Roboto Mono', monospace;
 
-	background: url("");
+background: url("");
 
-	background-size: cover;
+background-size: cover;
 
-	background-position: center;
+background-position: center;
 
-	text-align: center;
+text-align: center;
 
-	text-shadow: 1.5px 1.5px green;
+text-shadow: 1.5px 1.5px green;
 
-	opacity: 85%;
+opacity: 85%;
 
 }
 
 label {
 
-	font-family: 'Roboto Mono', monospace;
+font-family: 'Roboto Mono', monospace;
 
 }
 
@@ -99,9 +104,9 @@ font-family: 'Monospaced', Courier New;
 
 .completed {
 
-	text-decoration: line-through;
+text-decoration: line-through;
 
-	color: white;
+color: white;
 
 }
 
@@ -111,11 +116,11 @@ font-family: 'Monospaced', Courier New;
 
 
 
-	width: 50px;
+width: 50px;
 
-	height: 50px;
+height: 50px;
 
-	color: red;
+color: red;
 
 
 
