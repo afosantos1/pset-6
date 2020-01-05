@@ -1,38 +1,40 @@
+let array = [];
 $("ul").on("click", "li", function(event){
 	$(this).toggleClass("completed");
-
 });
-
-
 $("ul").on("click", "span", function(event){
 	if ($(this).hasClass("priority")) {
 		$(this).toggleClass("high-priority");
 		if ($(this).hasClass("high-priority")) {
 			$(this).parent().prependTo("ul");
+			console.log(array);
 		}
 		else {
 			$(this).parent().appendTo("ul");
 		}
-		
 		event.stopPropagation();
-		console.log("high");
 	}
-	else {
-		
+	else if ($(this).hasClass("trash")) {
+		const id = $(this)[0].id.substring(7);
+		array.splice(id, 1);
 		$(this).parent().remove();
 		event.stopPropagation();
 	}
-	
 });
-
-$("input[type='text']").keypress(function(event){
-	if(event.which === 13){
-		
-		var todoText = $(this).val();
-		$(this).val("");
-		if (todoText != "") {
-			
-			$("ul").append("<li><span class='priority'><i class='fa fa-exclamation-circle'></i></span><span><i class='fa fa-trash'></i></span> " + todoText + " </li>");
+$("span").click(function(event){
+	console.log("clicked button");
+	input = $("input");
+	inputValue = input.val();
+	if(event.target.id === "button") {
+		if (inputValue === null || inputValue === "") {
+			return;
 		}
+		array.push({
+			id: array.length,
+			content: inputValue,
+		});
+		const item = array[array.length - 1];
+		$(input).val("");
+		$("ul").append("<li><span class='priority'><i class='fa fa-exclamation-circle'></i></span><span id=delete-" + item.id + " class='trash'><i class='fa fa-trash'></i></span> " + item.content + " </li>");
 	}
 });
